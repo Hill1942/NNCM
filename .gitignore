@@ -2,6 +2,7 @@
 bin/
 gen/
 libs/
+out/
 ant.properties
 build.xml
 local.properties
