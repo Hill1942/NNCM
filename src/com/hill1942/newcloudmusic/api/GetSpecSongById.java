@@ -1,11 +1,14 @@
 package com.hill1942.newcloudmusic.api;
 
 import android.os.AsyncTask;
+import android.util.Log;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.client.utils.URLEncodedUtils;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.protocol.HTTP;
@@ -20,38 +23,30 @@ import java.util.List;
 /**
  * Created by Kaidi on 2015/4/9.
  */
-
-
-public class GetAlbumsByName {
-
-    String name;
+public class GetSpecSongById {
+    int id;
     APICallBack callBack;
 
-    public GetAlbumsByName(String name, APICallBack callBack) {
-        this.name = name;
+    public GetSpecSongById(int id, APICallBack callBack) {
+        this.id = id;
         this.callBack = callBack;
-        new GetAblumsByNameTask().execute(APIConstant.NCM_SEARCH_GET);
+        new GetSpecSongByIdTask().execute(APIConstant.NCM_SONG_DETAIL);
     }
 
-    private class GetAblumsByNameTask extends AsyncTask<String, Void, String> {
+    private class GetSpecSongByIdTask extends AsyncTask<String, Void, String> {
         @Override
         protected String doInBackground(String... params) {
             try {
                 String url  = params[0];
                 HttpClient httpClient = new DefaultHttpClient();
-                HttpPost httpPost = new HttpPost(url);
-                httpPost.addHeader("Cookie", "appver=2.5.4");
-                httpPost.addHeader("Referer", "http://music.163.com");
 
                 List<NameValuePair> querys = new ArrayList<NameValuePair>();
-                querys.add(new BasicNameValuePair("s", name));
-                querys.add(new BasicNameValuePair("type", "10"));  // type 10 means searching albums
-                querys.add(new BasicNameValuePair("offset", "0"));
-                querys.add(new BasicNameValuePair("sub", "false"));
-                querys.add(new BasicNameValuePair("limit", "20"));
-                httpPost.setEntity(new UrlEncodedFormEntity(querys, HTTP.UTF_8));
+                querys.add(new BasicNameValuePair("ids", "[" + Integer.toString(id) + "]"));
+                HttpGet httpGet = new HttpGet(url + "?" + URLEncodedUtils.format(querys, "utf-8"));
+                httpGet.addHeader("Cookie", "appver=2.5.4");
+                httpGet.addHeader("Referer", "http://music.163.com");
 
-                HttpResponse httpResponse = httpClient.execute(httpPost);
+                HttpResponse httpResponse = httpClient.execute(httpGet);
                 if (httpResponse.getStatusLine().getStatusCode() == 200) {
                     return EntityUtils.toString(httpResponse.getEntity());
                 }
@@ -63,12 +58,8 @@ public class GetAlbumsByName {
 
         protected void onPostExecute(String msg) {
             try {
+                Log.e("haha", msg);
                 JSONObject jsonObject = new JSONObject(msg);
-                int albumCount = jsonObject.getJSONObject("result").getInt("albumCount");
-                if (albumCount > 0) {
-                    JSONArray albums = jsonObject.getJSONObject("result").getJSONArray("albums");
-                    callBack.run(albums);
-                }
 
             } catch (JSONException e) {
                 e.printStackTrace();

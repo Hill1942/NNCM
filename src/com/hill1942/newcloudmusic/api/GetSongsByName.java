@@ -1,6 +1,7 @@
 package com.hill1942.newcloudmusic.api;
 
 import android.os.AsyncTask;
+import android.util.Log;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
@@ -20,20 +21,17 @@ import java.util.List;
 /**
  * Created by Kaidi on 2015/4/9.
  */
-
-
-public class GetAlbumsByName {
-
+public class GetSongsByName {
     String name;
     APICallBack callBack;
 
-    public GetAlbumsByName(String name, APICallBack callBack) {
+    public GetSongsByName(String name, APICallBack callBack) {
         this.name = name;
         this.callBack = callBack;
-        new GetAblumsByNameTask().execute(APIConstant.NCM_SEARCH_GET);
+        new GetSongsByNameTask().execute(APIConstant.NCM_SEARCH_GET);
     }
 
-    private class GetAblumsByNameTask extends AsyncTask<String, Void, String> {
+    private class GetSongsByNameTask extends AsyncTask<String, Void, String> {
         @Override
         protected String doInBackground(String... params) {
             try {
@@ -45,7 +43,7 @@ public class GetAlbumsByName {
 
                 List<NameValuePair> querys = new ArrayList<NameValuePair>();
                 querys.add(new BasicNameValuePair("s", name));
-                querys.add(new BasicNameValuePair("type", "10"));  // type 10 means searching albums
+                querys.add(new BasicNameValuePair("type", "1"));  // type 1 means searching songs
                 querys.add(new BasicNameValuePair("offset", "0"));
                 querys.add(new BasicNameValuePair("sub", "false"));
                 querys.add(new BasicNameValuePair("limit", "20"));
@@ -64,12 +62,11 @@ public class GetAlbumsByName {
         protected void onPostExecute(String msg) {
             try {
                 JSONObject jsonObject = new JSONObject(msg);
-                int albumCount = jsonObject.getJSONObject("result").getInt("albumCount");
-                if (albumCount > 0) {
-                    JSONArray albums = jsonObject.getJSONObject("result").getJSONArray("albums");
-                    callBack.run(albums);
+                int songCount = jsonObject.getJSONObject("result").getInt("songCount");
+                if (songCount > 0) {
+                    JSONArray songs = jsonObject.getJSONObject("result").getJSONArray("songs");
+                    callBack.run(songs);
                 }
-
             } catch (JSONException e) {
                 e.printStackTrace();
             }

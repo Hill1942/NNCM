@@ -6,4 +6,6 @@ package com.hill1942.newcloudmusic.api;
 public class APIConstant {
 
     public static final String NCM_SEARCH_GET = "http://music.163.com/api/search/get";
+
+    public static final String NCM_SONG_DETAIL = "http://music.163.com/api/song/detail";
 }

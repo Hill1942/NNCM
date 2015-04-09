@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.util.Log;
 import com.hill1942.newcloudmusic.api.APICallBack;
 import com.hill1942.newcloudmusic.api.GetAlbumsByName;
+import com.hill1942.newcloudmusic.api.GetSongsByName;
+import com.hill1942.newcloudmusic.api.GetSpecSongById;
+import com.hill1942.newcloudmusic.model.Song;
 import org.json.JSONArray;
 
 public class MainActivity extends Activity {
@@ -16,18 +19,16 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        new GetAlbumsByName("AMIT2", new APICallBack(){
+        Song song = new Song("战之祭");
+        int song_id = song.GetId();
+       // Log.e("song_id", Integer.toString(song_id));
+        new GetSpecSongById(31311125, new APICallBack() {
             @Override
             public void run(JSONArray array) {
-                try {
-                    for (int i = 0; i < array.length(); i++) {
-                        Log.e("sss", Integer.toString(array.getJSONObject(i).getInt("id")));
-                    }
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
+
             }
         });
+
     }
 }
 

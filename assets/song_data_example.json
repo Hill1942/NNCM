@@ -1,0 +1,54 @@
+{
+    "result": {
+        "songCount": 1,
+        "songs": [
+            {
+                "id": 31311125,
+                "name": "战之祭",
+                "artists": [
+                    {
+                        "id": 10559,
+                        "name": "张惠妹",
+                        "picUrl": null,
+                        "alias": [],
+                        "albumSize": 0,
+                        "picId": 0,
+                        "trans": null,
+                        "img1v1Url": "http://p3.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                        "img1v1": 0
+                    }
+                ],
+                "album": {
+                    "id": 3109245,
+                    "name": "AMIT2",
+                    "artist": {
+                        "id": 0,
+                        "name": "",
+                        "picUrl": null,
+                        "alias": [],
+                        "albumSize": 0,
+                        "picId": 0,
+                        "trans": null,
+                        "img1v1Url": "http://p3.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                        "img1v1": 0
+                    },
+                    "publishTime": 1428076800007,
+                    "size": 10,
+                    "copyrightId": 0,
+                    "status": 0,
+                    "picId": 6652045349593431
+                },
+                "duration": 223000,
+                "copyrightId": 0,
+                "status": 0,
+                "alias": [],
+                "fee": 0,
+                "mvid": 0,
+                "rtype": 0,
+                "rUrl": null,
+                "ftype": 0
+            }
+        ]
+    },
+    "code": 200
+}
