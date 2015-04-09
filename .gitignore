@@ -1,0 +1,10 @@
+.idea/
+bin/
+gen/
+libs/
+ant.properties
+build.xml
+local.properties
+newcloudmusic.iml
+proguard-project.txt
+project.properties

@@ -1,0 +1,62 @@
+{
+    "result": {
+        "albums": [
+            {
+                "songs": [],
+                "name": "AMIT2",
+                "id": 3109245,
+                "type": "专辑",
+                "size": 10,
+                "description": "",
+                "status": 0,
+                "tags": "",
+                "alias": [
+                    "阿密特2"
+                ],
+                "briefDesc": "",
+                "artist": {
+                    "img1v1Id": 0,
+                    "name": "张惠妹",
+                    "id": 10559,
+                    "alias": [
+                        "阿mei",
+                        "阿密特"
+                    ],
+                    "briefDesc": "",
+                    "picUrl": "http://p4.music.126.net/-JxOlVRUl3OFqNkCIu9dlw==/678398674363509.jpg",
+                    "picId": 678398674363509,
+                    "albumSize": 31,
+                    "img1v1Url": "http://p3.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                    "musicSize": 636,
+                    "trans": ""
+                },
+                "commentThreadId": "R_AL_3_3109245",
+                "picUrl": "http://p4.music.126.net/Y7YA3G7LR-avh0xtFis9bA==/6652045349593431.jpg",
+                "picId": 6652045349593431,
+                "artists": [
+                    {
+                        "img1v1Id": 0,
+                        "name": "张惠妹",
+                        "id": 10559,
+                        "alias": [],
+                        "briefDesc": "",
+                        "picUrl": "http://p4.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                        "picId": 0,
+                        "albumSize": 0,
+                        "img1v1Url": "http://p4.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                        "musicSize": 0,
+                        "trans": ""
+                    }
+                ],
+                "publishTime": 1428076800007,
+                "company": "环球音乐",
+                "copyrightId": 0,
+                "pic": 6652045349593431,
+                "blurPicUrl": "http://p3.music.126.net/Y7YA3G7LR-avh0xtFis9bA==/6652045349593431.jpg",
+                "companyId": 0
+            }
+        ],
+        "albumCount": 1
+    },
+    "code": 200
+}
