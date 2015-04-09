@@ -1,0 +1,157 @@
+{
+    "songs": [
+        {
+            "starred": false,
+            "popularity": 5,
+            "starredNum": 0,
+            "playedNum": 0,
+            "dayPlays": 0,
+            "hearTime": 0,
+            "mp3Url": "http://m1.music.126.net/_JQ8pQQQAdLtSK6-YbwVyg==/2910407278727315.mp3",
+            "rtUrls": [],
+            "name": "战之祭",
+            "id": 31311125,
+            "duration": 223000,
+            "status": 0,
+            "position": 1,
+            "alias": [],
+            "lMusic": {
+                "name": null,
+                "id": 59622524,
+                "size": 2686881,
+                "extension": "mp3",
+                "dfsId": 2910407278727315,
+                "bitrate": 96000,
+                "playTime": 223000,
+                "sr": 44100,
+                "volumeDelta": 0
+            },
+            "bMusic": {
+                "name": null,
+                "id": 59622524,
+                "size": 2686881,
+                "extension": "mp3",
+                "dfsId": 2910407278727315,
+                "bitrate": 96000,
+                "playTime": 223000,
+                "sr": 44100,
+                "volumeDelta": 0
+            },
+            "artists": [
+                {
+                    "img1v1Id": 0,
+                    "name": "张惠妹",
+                    "id": 10559,
+                    "alias": [],
+                    "albumSize": 0,
+                    "briefDesc": "",
+                    "picUrl": "http://p3.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                    "musicSize": 0,
+                    "picId": 0,
+                    "trans": "",
+                    "img1v1Url": "http://p4.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg"
+                }
+            ],
+            "commentThreadId": "R_SO_4_31311125",
+            "album": {
+                "songs": [],
+                "name": "AMIT2",
+                "id": 3109245,
+                "type": "专辑",
+                "size": 10,
+                "description": "",
+                "status": 0,
+                "tags": "",
+                "alias": [
+                    "阿密特2"
+                ],
+                "artist": {
+                    "img1v1Id": 0,
+                    "name": "",
+                    "id": 0,
+                    "alias": [],
+                    "albumSize": 0,
+                    "briefDesc": "",
+                    "picUrl": "http://p3.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                    "musicSize": 0,
+                    "picId": 0,
+                    "trans": "",
+                    "img1v1Url": "http://p4.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg"
+                },
+                "briefDesc": "",
+                "artists": [
+                    {
+                        "img1v1Id": 0,
+                        "name": "张惠妹",
+                        "id": 10559,
+                        "alias": [],
+                        "albumSize": 0,
+                        "briefDesc": "",
+                        "picUrl": "http://p4.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                        "musicSize": 0,
+                        "picId": 0,
+                        "trans": "",
+                        "img1v1Url": "http://p4.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg"
+                    }
+                ],
+                "commentThreadId": "R_AL_3_3109245",
+                "picUrl": "http://p3.music.126.net/Y7YA3G7LR-avh0xtFis9bA==/6652045349593431.jpg",
+                "company": "环球音乐",
+                "picId": 6652045349593431,
+                "publishTime": 1428076800007,
+                "copyrightId": 0,
+                "blurPicUrl": "http://p3.music.126.net/Y7YA3G7LR-avh0xtFis9bA==/6652045349593431.jpg",
+                "companyId": 0,
+                "pic": 6652045349593431
+            },
+            "score": 5,
+            "copyFrom": "",
+            "hMusic": {
+                "name": null,
+                "id": 59622522,
+                "size": 8955954,
+                "extension": "mp3",
+                "dfsId": 2910407278727313,
+                "bitrate": 320000,
+                "playTime": 223000,
+                "sr": 44100,
+                "volumeDelta": 0
+            },
+            "mMusic": {
+                "name": null,
+                "id": 59622523,
+                "size": 4478045,
+                "extension": "mp3",
+                "dfsId": 2910407278727314,
+                "bitrate": 160000,
+                "playTime": 223000,
+                "sr": 44100,
+                "volumeDelta": 0
+            },
+            "fee": 0,
+            "copyrightId": 0,
+            "mvid": 0,
+            "ftype": 0,
+            "rtype": 0,
+            "rurl": null,
+            "audition": {
+                "name": "战之祭",
+                "id": 59747174,
+                "size": 1813529,
+                "extension": "m4a",
+                "dfsId": 2930198488025480,
+                "bitrate": 64000,
+                "playTime": 223000,
+                "sr": 44100,
+                "volumeDelta": 0
+            },
+            "ringtone": null,
+            "disc": "",
+            "no": 1,
+            "crbt": null,
+            "rtUrl": null
+        }
+    ],
+    "equalizers": {},
+    "code": 200
+}
