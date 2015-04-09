@@ -6,6 +6,6 @@ out/
 ant.properties
 build.xml
 local.properties
-newcloudmusic.iml
+*.iml
 proguard-project.txt
 project.properties
